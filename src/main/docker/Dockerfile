@@ -1,4 +1,4 @@
-FROM java:8
+FROM davidcaste/alpine-java-unlimited-jce
 MAINTAINER jared@weinfurtner.io
 ADD config-server-0.0.1-SNAPSHOT.jar config-server.jar
 RUN sh -c 'touch /config-server.jar'
